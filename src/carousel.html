@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Solodev's Infinite Carousel</title>
+    <meta charset="UTF-8">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="carousel.css" rel="stylesheet" type="text/css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="slick.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+    <h1>A Special Thankyou to you guys </h1>
+    <div class="row">
+        <div class="container">
+            <section class="customer-logos slider">
+                <div class="slide"><img
+                        src="https://hoyahacks.georgetown.domains/wp-content/uploads/2020/08/hoyahacks_Tracks_education-e1597962429729.png">
+                </div>
+                <div class="slide"><img
+                        src="https://static.wixstatic.com/media/c42fea_d1fbddac9a524f16b3d4456d639b444a~mv2.png/v1/fill/w_750,h_375,al_c/c42fea_d1fbddac9a524f16b3d4456d639b444a~mv2.png"
+                        height="183">
+                </div>
+                <div class="slide"><img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png"></div>
+                <div class="slide"><img
+                        src="https://www.generationsforpeace.org/wp-content/uploads/2014/05/university-georgetown-partner-logo-generations-for-peace-ngo-jordan-2014-gfp.png"
+                        height="200" width="100">
+                </div>
+                <div class="slide"><img src="https://blog.hubspot.com/hubfs/image8-2.jpg" height="170"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.customer-logos').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                arrows: false,
+                dots: false,
+                pauseOnHover: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4
+                    }
+                }, {
+                    breakpoint: 520,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                }]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
